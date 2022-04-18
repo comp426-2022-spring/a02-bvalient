@@ -42,9 +42,9 @@ export function coinFlip() {
  */
 
 export function coinFlips(flips) {
-  var returnable = new Array(flips);
+  let returnable = [];
   for(let i = 0; i < flips; i++){
-    Array[i] = coinFlip();
+    returnable.push(coinFlip());
   } 
   return returnable;
 }
