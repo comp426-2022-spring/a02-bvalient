@@ -87,13 +87,13 @@ export function countFlips(array) {
  */
 
 export function flipACoin(call) {
-  theFlip = coinFlip();
-  resultW = "win"
-  resultsL = "lose"
+  let theFlip = coinFlip();
+  let resultW = "win"
+  let resultsL = "lose"
   if(theFlip == call){
-    return " call: " + call + ", flip: " + theFlip + ", result: " + resultW
+    return "{ call: " + call + ", flip: " + theFlip + ", result: " + resultW + " }"
   } else {
-    return " call: " + call + ", flip: " + theFlip + ", result: " + resultsL
+    return "{ call: " + call + ", flip: " + theFlip + ", result: " + resultsL + " }"
   }
 }
 
